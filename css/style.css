@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.header{
+    background-image: radial-gradient(rgb(35, 35, 35), black);
+    height: 100vh;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    margin: 0 50px;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 10px 20px;
+    z-index: 999;
+}
+.menu{
+    height: 24px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+.menu span{
+    background-color: rgb(0, 185, 0);
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    transition: .5s;
+}
+#first{
+    top: 0;
+}
+#center{
+    top: 10px;
+}
+#last{
+    top: 20px;
+}
+#first.first{
+    top: 10px;
+    transform: rotate(45deg);
+    background-color: red;
+}
+#last.last{
+    top: 10px;
+    transform: rotate(-45deg);
+    background-color: red;
+}
+#center.center{
+    opacity: 0;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+header nav .logo i{
+    font-size: 22px;
+    color: rgb(0, 185, 0);
+}
+header nav .links{
+    display: flex;
+    gap: 20px;
+}
+header nav .links P{
+    font-weight: 500;
+    transition: .5s;
+    cursor: pointer;
+}
+header nav .links P:hover{
+    color: rgb(0, 185, 0);
+}
+header nav .social-link{
+    display: flex;
+    gap: 15px;
+}
+header nav .social-link i{
+    cursor: pointer;
+    transition: .5s;
+}
+header nav .social-link i:hover{
+    color: rgb(0, 185, 0);
+}
+.header .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 120px 0 0;
+}
+.header .content .left{
+    margin-left: 80px;
+}
+.header .content img{
+    width: 30%;
+    margin-right: 80px;
+    border-radius: 10px 20px;
+    border: 2px solid rgb(0, 185, 0);
+    animation: rgb 2s infinite;
+    position: relative;
+}
+@keyframes rgb{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 20px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.header .content .left p{
+    margin: 15px 0;
+    font-size: 18px;
+}
+.header .content .left h2{
+    color: rgb(0, 185, 0);
+}
+.header .content .left button{
+    border: 2px solid rgb(0, 185, 0);
+    background: none;
+    padding: 15px;
+    border-radius: 10px 20px;
+    font-size: 15px;
+    color: rgb(0, 185, 0);
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.header .content .left button:hover{
+    background-color: rgb(0, 185, 0);
+    color: white;
+}
+.about{
+    text-align: center;
+    background-image: url(../img/WhatsApp\ Image\ 2022-09-22\ at\ 8.52.23\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+.about .title h2{
+    padding: 15px;
+    font-size: 30px;
+}
+.about .content2{
+    padding-top: 30px;
+}
+.about .content p{
+    line-height: 35px;
+    font-size: 18px;
+}
+.services{
+    background-image: radial-gradient(rgb(35, 35, 35), black);
+    text-align: center;
+    padding: 10px;
+}
+.services .title h2{
+    padding: 15px;
+    font-size: 30px;
+}
+.services .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.services .content .card, .contact-us .content .card{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px 20px;
+    transition: .5s;
+}
+.services .content .card i, .contact-us .content .card i{
+    font-size: 70px;
+    margin: 20px 0;
+}
+.services .content .card h3{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.services .content .card:hover, .contact-us .content .card:hover{
+    box-shadow: 1px 1px 10px white;
+    transform: scale(1.1);
+}
+.project{
+    background-image: url(../img/d14577e7c67880bd075c5ac39d357f78.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 10px;
+}
+.project .title h2{
+    padding: 15px;
+    font-size: 30px;
+}
+.project .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.project .content .card{
+    background-image: url(../img/Screenshot\ 2024-03-01\ 144427.png);
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+}
+.project .content .card .content2{
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    width: 100%;
+}
+.project .content .card:hover .content2{
+    background-color: rgb(124, 166, 180);
+    display: block;
+    height: 100%;
+}
+.project .content .card .content2 h3{
+    margin: 20px 0;
+}
+.project .content .card .content2 a{
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 20px;
+    transition: .5s;
+}
+.project .content .card .content2 p{
+    margin: 20px 0 40px;
+}
+.project .content .card .content2 a:hover{
+    background-color: rgb(0, 102, 0);
+}
+.project .content .card2{
+    background-image: url(../img/Screenshot\ 2024-03-01\ 151105.png);
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+}
+.project .content .card2 .content2{
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    width: 100%;
+}
+.project .content .card2:hover .content2{
+    background-color: rgb(124, 166, 180);
+    display: block;
+    height: 100%;
+}
+.project .content .card2 .content2 h3{
+    margin: 20px 0;
+}
+.project .content .card2 .content2 a{
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 20px;
+    transition: .5s;
+}
+.project .content .card2 .content2 p{
+    margin: 20px 0 40px;
+}
+.project .content .card2 .content2 a:hover{
+    background-color: rgb(0, 102, 0);
+}
+.contact-us{
+    background-image: radial-gradient(rgb(35, 35, 35), black);
+    text-align: center;
+    padding: 20px;
+}
+.contact-us .title h2{
+    padding: 15px;
+    font-size: 30px;
+}
+.contact-us .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.contact-us .content .card h3{
+    margin: 20px 0;
+    font-size: 23px;
+}
+.contact-us .content .card p{
+    padding: 15px 0;
+}
+.contact-us .content .card button{
+    padding: 10px;
+    background: none;
+    border: 2px solid rgb(0, 185, 0);
+    border-radius: 10px 20px;
+    color: rgb(0, 185, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact-us .content .card button:hover{
+    background-color: rgb(0, 185, 0);
+    color: white;
+}
+.contact-us .content .card button:active{
+    background-color: rgb(0, 102, 0);
+    border: 2px solid rgb(0, 102, 0);
+}
+footer{
+    background-image: radial-gradient(black, rgb(35, 35, 35));
+    padding: 20px;
+    text-align: center;
+}
+footer nav p{
+    padding: 10px;
+}
+footer nav .icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 22px;
+    padding: 10px;
+}
+footer nav .icon i{
+    cursor: pointer;
+    transition: .5s;
+}
+footer nav .icon i:hover{
+    color: rgb(0, 185, 0);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 185, 0);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(0, 102, 0);
+}
+@media(max-width: 850px){
+    header nav .links{
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        background-color: black;
+        width: 200px;
+        text-align: center;
+        padding: 20px 0;
+        transition: .5s ;
+        border-radius: 10px 20px;
+        border: 2px solid rgb(0, 185, 0);
+        margin-top: 10px;
+        overflow: hidden;
+        right: -420px;
+    }
+    header nav .links.i{
+        right: 0;
+    }
+    header nav .social-link{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .header{
+        position: relative;
+    }
+    .header .content{
+        display: block;
+        text-align: center;
+        position: relative;
+        height: 100%;
+        position: absolute;
+        padding: 0;
+        top: 40%;
+    }
+    .header .content img{
+        display: none;
+    }
+    .header .content .left{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .services .content{
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        width: fit-content;
+    }
+    .services{
+        padding: 30px 0;
+    }
+    .services .content .card{
+        margin-top: 30px;
+    }
+    .project .content{
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: fit-content;
+    }
+    .project .content .card2{
+        margin-top: 10px;
+    }
+    .contact-us .content{
+        width: fit-content;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .contact-us .content .card{
+        margin-top: 20px;
+    }
+}
