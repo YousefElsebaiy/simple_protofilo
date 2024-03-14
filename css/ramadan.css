@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(../img/bg.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.background{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    width: 80%;
+    height: 70%;
+    background-size: cover;
+    border: 2px solid white;
+    margin: 7% 0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px white;
+}
+.background .right{
+    width: 50%;
+    text-align: right;
+}
+.background .right img{
+    width: 50%;
+}
+.background .left h2{
+    font-size: 40px;
+    padding: 5px;
+    color: white;
+}
+.background .left p{
+    font-size: 17px;
+    padding: 5px;
+    color: rgb(174, 174, 174);
+}
+.background .left button{
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    transition: .5s;
+}
+.background .left button:hover{
+    background-color: rgb(113, 27, 193);
+    border: 2px solid rgb(113, 27, 193);
+    transform: scale(1.1);
+}
